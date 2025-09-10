@@ -51,7 +51,7 @@ export class Auth0Service implements IAuthService {
       return response.data.user_id;
     } catch (error) {
       console.error('Error creating user in Auth0:', error);
-      throw new Error('Failed to create user in Auth0');
+      throw new BadRequestError(error.response?.data?.message || 'Failed to create user in Auth0');
     }
   }
 
