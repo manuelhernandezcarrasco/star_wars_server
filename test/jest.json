@@ -1,0 +1,17 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": "..",
+  "roots": ["<rootDir>/src", "<rootDir>/test"],
+  "testEnvironment": "node",
+  "testRegex": ".*\\.spec\\.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^@/(.*)": "<rootDir>/src/$1",
+    "^@models/(.*)$": "<rootDir>/src/models/$1",
+    "^@movie/(.*)$": "<rootDir>/src/movie/$1",
+    "^@shared/(.*)$": "<rootDir>/src/shared/$1",
+    "^@user/(.*)$": "<rootDir>/src/user/$1"
+  }
+}
